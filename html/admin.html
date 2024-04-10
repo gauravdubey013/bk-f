@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpeedPark - ADMIN PAGE</title>
+    <link rel="stylesheet" href="/css/admin.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h2 class="logo">
+          <a href="#">
+            <img class="navLogo" src="/assets/logo.png" alt="" />
+          </a>
+        </h2>
+        <ul class="links">
+          <li><a href="/html/home.html">Home</a></li>
+          <li><a href="/html/aboutus.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="table">
+        <h1>Users (<span id="userCount">0</span>)</h1>
+        <table id="usersTable">
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Email</th>
+              <th>Full Name</th>
+              <th>Telephone</th>
+            </tr>
+          </thead>
+          <tbody id="usersTableBody"></tbody>
+        </table>
+      </div>
+      <div class="table">
+        <h1>Booked Slots (<span id="slotCount">0</span>)</h1>
+        <table id="bookedSlotsTable">
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Email</th>
+              <th>Select Date</th>
+              <th>Select Hour</th>
+              <th>Select Slots</th>
+              <th>Start Time</th>
+              <th>End Time</th>
+              <th>Valid</th>
+              <th>Vehicle Type</th>
+            </tr>
+          </thead>
+          <tbody id="bookedSlotsTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <script type="module" src="/js/admin.js"></script>
+  </body>
+</html>

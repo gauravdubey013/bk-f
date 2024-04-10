@@ -1,0 +1,52 @@
+<!-- home page html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpeedPark - Homepage</title>
+    <link rel="stylesheet" href="/css/home.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <h2 class="logo">
+          <a href="#">
+            <img class="navLogo" src="/assets/logo.png" alt="" />
+          </a>
+        </h2>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="/html/aboutus.html">About Us</a></li>
+          <li class="dropdown">
+            <label for="dropdown-toggle">Bookings</label>
+            <ul class="dropdown-content">
+              <li><a href="/html/bookslot.html">Book Slot</a></li>
+              <li><a href="/html/slot.html">View Slots</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="buttons">
+          <a href="/html/register_login.html" class="signin">Sign In</a>
+          <a href="/html/home.html" class="logout">Log out</a>
+          <a href="/html/admin.html" class="admin">Admin</a>
+        </div>
+      </nav>
+    </header>
+    <div class="content" style="padding: 2rem">
+      <h1>Online Vehicle Parking System</h1>
+      <p style="color: aquamarine">
+        "Effortless Parking, Anytime, Anywhere:Your Vehicle's Perfect Spot
+        Awaits Online."
+      </p>
+      <a class="btn" href="/html/bookslot.html">Book Now!</a>
+      <!-- <img
+        class="cars-park"
+        src="/assets/cars-park.gif"
+        alt="car"
+        style="width: 25rem; margin-top: 1rem"
+      /> -->
+    </div>
+    <script type="module" src="/js/home.js"></script>
+  </body>
+</html>

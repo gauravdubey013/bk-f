@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slots</title>
+    <link rel="stylesheet" href="/css/bookslot.css" />
+  </head>
+  <body>
+    <h2>Book a Slot</h2>
+    <nav class="navbar">
+      <a href="/html/home.html">Home</a>
+      <a href="/html/aboutus.html">About Us</a>
+      <a href="/html/slot.html">View Slots</a>
+    </nav>
+
+    <form class="form-container">
+      <label for="vehicleNumber">Enter Vehicle Number :</label>
+      <input
+        required
+        type="text"
+        id="vehicleNumber"
+        name="vehicleNumber"
+        oninput="this.value = this.value.toUpperCase().replace(/\s/g, '')"
+      />
+      <label for="selectDate">Select Date :</label>
+      <input required type="date" id="selectDate" name="selectDate" />
+      <label for="startTime">Select Start Time :</label>
+      <input required type="time" id="startTime" name="startTime" />
+      <label for="selectHour">Select Hour :</label>
+      <select required id="selectHour">
+        <option value="1">1 Hrs</option>
+        <option value="2">2 Hrs</option>
+        <option value="3">3 Hrs</option>
+        <option value="4">4 Hrs</option>
+        <option value="5">5 Hrs</option>
+        <option value="6">6 Hrs</option>
+        <option value="7">7 Hrs</option>
+        <option value="8">8 Hrs</option>
+        <option value="9">9 Hrs</option>
+        <option value="10">10 Hrs</option>
+        <option value="11">11 Hrs</option>
+        <option value="12">12 Hrs</option>
+      </select>
+      <label for="selectSlots">Select Slot Number :</label>
+      <select required id="selectSlots">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+      </select>
+      <label for="vehicleType">Choose a Vehicle Type :</label>
+      <select required id="vehicleType">
+        <option value="2-wheeler">2 Wheeler</option>
+        <option value="4-wheeler">4 Wheeler</option>
+      </select>
+      <button type="submit" id="book_slot_submit">Book Slot</button>
+    </form>
+    <script type="module" src="/js/bookslot.js"></script>
+
+    <script>
+      var today = new Date();
+
+      var dd = String(today.getDate()).padStart(2, "0");
+      var mm = String(today.getMonth() + 1).padStart(2, "0"); // January is 0!
+      var yyyy = today.getFullYear();
+
+      today = yyyy + "-" + mm + "-" + dd;
+
+      document.getElementById("selectDate").setAttribute("min", today);
+    </script>
+  </body>
+</html>

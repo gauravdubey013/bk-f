@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #fff;
+  background-image: url("/assets/1736.jpg");
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #45a049;
+}
+
+nav {
+  width: 100%;
+  background-color: #333;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 14px 16px;
+  transition: 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 3rem auto;
+  text-align: center;
+  align-items: center;
+  display: grid; /* Use grid layout */
+  grid-template-columns: max-content 1fr; /* Label and input side-by-side */
+  gap: 10px; /* Spacing between rows */
+  padding: 20px; /* Add padding */
+  border: 1px solid #ccc; /* Add border */
+  border-radius: 5px; /* Add border radius */
+  background-color: #00000065;
+}
+
+label {
+  text-align: right; /* Right-align labels */
+}
+
+input,
+select {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #00000000;
+}
+select option {
+  background-color: #000000; /* Set background color */
+}
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer;
+  display: block;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpeedPark - Login & Registration</title>
+    <link rel="stylesheet" type="text/css" href="/css/register_login.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+  <body>
+    <!-- <div id="nav-placeholder" /> -->
+
+    <div class="wrapper">
+      <div class="form-wrapper sign-in">
+        <form action="" id="loginForm">
+          <h2>Login</h2>
+          <div class="input-group">
+            <div class="icon"></div>
+            <i class="uil uil-envelope-minus"></i>
+            <input type="email" id="login_email" required />
+            <label for="">Enter your Email</label>
+          </div>
+          <div class="input-group">
+            <div class="icon"></div>
+            <i class="uil uil-eye password-toggle"></i>
+            <input type="password" id="login_password" required />
+            <label for="">Enter your Password</label>
+          </div>
+
+          <button type="submit" id="login_submit">Login</button>
+          <div class="signUp-link">
+            <p>
+              Forget password?
+              <a href="/html/forget_password.html">reset</a>
+            </p>
+          </div>
+          <div class="signUp-link">
+            <p>
+              Don't have an account?
+              <a href="#" class="signUpBtn-link">Sign Up</a>
+            </p>
+          </div>
+        </form>
+        <!-- Login form - end -->
+      </div>
+      <div class="form-wrapper sign-up">
+        <!-- Register form - start -->
+        <form action="" id="registerForm">
+          <h2>Sign Up</h2>
+          <div class="input-group">
+            <i class="uil uil-user"></i>
+            <input
+              required
+              type="text"
+              value=""
+              id="fullname"
+              title="Enter fullname"
+            />
+            <label for="">Enter Your Full Name</label>
+          </div>
+          <div class="input-group">
+            <i class="uil uil-phone-alt"></i>
+            <input
+              type="tel"
+              value=""
+              id="telephone"
+              required
+              pattern="[0-9]{10}"
+              title="Please enter a 10-digit phone number"
+            />
+            <label for="">Enter Contact Number</label>
+          </div>
+          <div class="input-group">
+            <i class="uil uil-envelope-minus"></i>
+            <input
+              type="email"
+              value=""
+              id="Email"
+              required
+              title="Enter a valid email address"
+            /><!-- pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" -->
+            <label for="">Enter Your Email</label>
+          </div>
+          <div class="input-group">
+            <i class="uil uil-eye password-toggle"></i>
+            <input
+              type="password"
+              value=""
+              id="password"
+              pattern=".{8,}"
+              required
+              title="Password must be at least 8 characters long"
+            />
+            <label for="">Set Password</label>
+          </div>
+          <div class="input-group">
+            <i class="uil uil-lock-alt"></i>
+            <input
+              type="password"
+              value=""
+              id="cpassword"
+              pattern=".{8,}"
+              required
+              title="Password must be at least 8 characters long"
+            />
+            <label for="">Confirm Password</label>
+          </div>
+          <div class="remember">
+            <label>
+              <input type="checkbox" required /> I agree to the terms &
+              conditions
+            </label>
+          </div>
+          <button type="submit" id="register_submit">Sign Up</button>
+          <div class="signUp-link">
+            <p>
+              Already have an account?
+              <a href="#" class="signInBtn-link">Sign In</a>
+            </p>
+          </div>
+        </form>
+        <!-- Register form - end -->
+      </div>
+    </div>
+    <script type="module" src="/js/register_login.mjs"></script>
+  </body>
+</html>
